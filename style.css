@@ -1,0 +1,265 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Poppins', sans-serif;
+    /* font-size: 1.2rem; */
+}
+
+p {
+    margin-top: 1rem;
+}
+
+.menu {
+    position: fixed;
+    width: 100%;
+    min-height: 15vh;
+    background-color: rgb(34, 34, 34);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* padding: 1rem; */
+}
+
+.logo svg {
+    height: 3rem;
+    width: 6rem;
+    fill: rgb(245, 245, 245);
+}
+
+.nav-links {
+    display: flex;
+    justify-content: flex-end;
+    /* width: 33%; */
+}
+
+.nav-links li {
+    margin-right: 2rem;
+    list-style: none;
+}
+
+.nav-links a {
+    color: rgb(226, 226, 226);
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+section {
+    padding-top: 15vh;
+    height: 100vh;
+}
+
+#welcome-section {
+    background-color: rgb(24, 24, 24);
+    font-size: 1.8rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+#welcome-section h1 {
+    margin-top: 8rem;
+}
+
+#welcome-section p {
+    margin-top: 5rem;
+}
+
+#projects {
+    background-color: rgb(245, 245, 245);
+    height: 100%;
+    padding: 3rem;
+}
+
+.project-tile {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.card {
+    width: 25rem;
+    display: block;
+    background-color: #fff;
+    /* margin-left: 3rem; */
+    margin-top: 3rem;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+.card img {
+    width: 100%;
+}
+
+#contacts {
+    background-color: rgb(24, 24, 24);
+    font-size: 1.2rem;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-icons {
+    display: flex;
+    justify-content: space-around;
+    width: 70%;
+    padding-top: 5rem;
+}
+
+.social {
+    transition: transform 0.3s ease-out;
+}
+
+.social:hover {
+    transform: translateY(-10px);
+}
+
+.social a {
+    display: flex;
+    align-items: center;
+    color: rgb(245, 245, 245);
+    text-decoration: none;
+}
+
+.social h4 {
+    margin-left: 1rem;
+}
+
+.social svg {
+    fill: rgb(245, 245, 245);
+    width: 2.5rem;
+    height: 2.5rem;
+}
+
+.even {
+    color: rgb(245, 245, 245);
+}
+
+.gray-wave {
+    height: 15vh;
+    background: url('./gray-wave.png');
+    background-position: top center;
+    background-size: 100% 100%;
+    background-color: rgb(24, 24, 24);
+}
+
+.black-wave {
+    height: 15vh;
+    background: url('./gray-wave-2.png');
+    background-position: top center;
+    background-size: 100% 100%;
+    background-color: rgb(24, 24, 24);
+}
+
+@media screen and (max-width: 968px) {
+    .social a {
+        flex-direction: column;
+    }
+
+    .social h4 {
+        margin-left: 0;
+        margin-top: 1rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .menu {
+        flex-direction: column;
+        /* align-items: space-around;
+        justify-content: space-around; */
+        position: inherit;
+        height: 30vh;
+    }
+
+    .logo {
+        /* display: none; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 15vh;
+    }
+
+    .logo svg {
+        height: 4rem;
+    }
+
+    .navbar {
+        background-color: rgb(34, 34, 34);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 15vh;
+        width: 100%;
+    }
+
+    .nav-links {
+        width: 100%;
+        justify-content: space-around;
+    }
+
+    .nav-links li {
+        margin-right: 0;
+        list-style: none;
+    }
+
+    .nav-links a {
+        color: rgb(226, 226, 226);
+        text-decoration: none;
+        letter-spacing: 2px;
+        font-weight: bold;
+        font-size: 1.2rem;
+    }
+
+    .contact-icons {
+        flex-direction: column;
+        align-items: flex-start;
+        padding-top: 3rem;
+        height: 80%;
+        position: relative;
+        transform: translateX(-50%);
+        left: 50%;
+    }
+
+    .social a {
+        flex-direction: row;
+    }
+
+    .social h4 {
+        margin-left: 1rem;
+    }
+
+    #contacts {
+        height: 70vh;
+        text-align: center;
+    }
+
+    #welcome-section {
+        height: 70vh;
+    }
+
+    #welcome-section h1 {
+        margin-top: 3rem;
+    }
+
+    #welcome-section p {
+        margin-top: 5rem;
+    }
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.sticky + .content {
+    padding-top: 60px;
+}
