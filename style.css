@@ -74,7 +74,7 @@ section {
 #projects {
     background-color: rgb(245, 245, 245);
     height: 100%;
-    padding: 3rem;
+    padding: 18vh 3rem 18vh 3rem;
 }
 
 .project-tile {
@@ -85,17 +85,51 @@ section {
 }
 
 .card {
-    width: 25rem;
+    width: 23rem;
     display: block;
-    background-color: #fff;
+    background-color: rgb(34, 34, 34);
+    color: rgb(224, 224, 224);
     /* margin-left: 3rem; */
     margin-top: 3rem;
-    padding: 1rem;
-    border-radius: 1rem;
+    /* padding: 1rem; */
+    border-radius: 0.4rem;
 }
 
 .card img {
     width: 100%;
+    height: 15rem;
+    border-radius: 0.1rem;
+}
+
+.card-footer {
+    padding: 2rem;
+    text-align: center;
+}
+
+.card-footer h4 {
+    font-size: 1.3rem;
+    text-transform: uppercase;
+}
+
+.card-footer p {
+    font-size: 1rem;
+    text-align: justify;
+}
+
+.card-tech {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* width: 80%; */
+    margin-left: 1rem;
+}
+
+.card-tech img {
+    width: 4rem;
+    height: 1.5rem;
+    border-radius: 0;
+    margin-top: 1rem;
+    margin-right: 1rem;
 }
 
 #contacts {
@@ -105,6 +139,7 @@ section {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-bottom: 2rem;
 }
 
 .contact-icons {
@@ -145,7 +180,7 @@ section {
 
 .gray-wave {
     height: 15vh;
-    background: url('./gray-wave.png');
+    background: url('https://raw.githubusercontent.com/Alison-Andrade/freeCodeCamp-portfolio/master/image/gray-wave.png');
     background-position: top center;
     background-size: 100% 100%;
     background-color: rgb(24, 24, 24);
@@ -153,7 +188,7 @@ section {
 
 .black-wave {
     height: 15vh;
-    background: url('./gray-wave-2.png');
+    background: url('https://raw.githubusercontent.com/Alison-Andrade/freeCodeCamp-portfolio/master/image/gray-wave-2.png');
     background-position: top center;
     background-size: 100% 100%;
     background-color: rgb(24, 24, 24);
@@ -237,7 +272,7 @@ section {
     }
 
     #contacts {
-        height: 70vh;
+        height: 73vh;
         text-align: center;
     }
 
